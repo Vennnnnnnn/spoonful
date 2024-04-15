@@ -1,0 +1,13 @@
+/* 產品 */
+.products .products-container {
+    max-width: 1200px;
+    margin: auto;
+}
+.products .products-sub-title{
+    font-size: 20px;
+    margin-top: 40px;
+}
+.products .products-title {
+    font-size: 20px;
+    margin-top: 10px;
+}

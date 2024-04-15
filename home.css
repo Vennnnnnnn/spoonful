@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Microsoft JhengHei;
+    background-color: #f5f5ee;
+}
+
+/* 整個header */
+.header-home{
+    /* border-bottom: 4px solid #d7d7b9; */
+    box-shadow:  0px -4px 15px 0px #bfbfa2 inset;
+    /* position: fixed; */
+    width: 100%;
+    margin: auto;
+    background-color: #f5f5e2;
+    /* background-color: #d7d7b9; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* opacity: .5; */
+    /* border: 1px solid red; */
+    height: 100px;
+} 
+
+/* 包住logo跟導覽列的框，用來排版*/
+.header-l-n{
+    /* border: 1px solid blue; */
+    display: flex;
+    /* justify-content:  */
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+/* 包住logo的外層 */
+.logo{
+    /* border: 1px solid red; */
+    width: 7%;
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+
+/* logo圖 */
+header .logo-img{
+    width: 100%;
+}
+
+/* 導覽列 */
+header .navigation-bar{
+    /* border: 1px solid red; */
+    /* width: %; */
+    position: relative;
+    top: 16px;
+    right: 0px;
+    /* display:flex ;
+    justify-content: flex-end; */
+    position: absolute;
+    width: 50%;
+}
+
+/* 包住導覽列文字的外層 */
+header .navigation-bar nav{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+/* 導覽列的文字 */
+header .navigation-bar nav > a{
+    padding: 0px 20px;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    color:#3f3c3c;
+}
+
+/* 包搜尋欄的外層 */
+.search{
+    position: absolute;
+    right: 0;
+    top: 55px;
+    /* border: 1px solid red; */
+}
+
+/* 搜尋欄 */
+.search  input{
+    border-radius: 10px;
+    height: 25px;
+    width: 150px;
+}
+
+/* .home{
+    position: relative;
+} */
+
+.img img{
+    border-radius: 3px;
+}
+
+/* 首頁大圖 */
+.img{
+    width: 100%;
+    height: 550px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.img .plate{
+    width: 100%;
+    height: 100%;
+    /* width: 700px; */
+}
+
+.img video{
+    width: 100%;
+    height: 100%;
+    
+}
+
+main{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}   
+
+main .wrap{
+    /* border: 5px solid blue; */
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    height: 500px;
+}
+
+/* 公告與通知 */
+main .notify-section{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    align-content: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+/* 公告內文 */
+main .notify-section article{
+    padding: 15px;
+    position: relative;
+    height: 70px;
+    border: 1px solid 
+    #3C3C3C;
+    width: 300px;
+    /* text-align: center; */
+    vertical-align: middle;
+    line-height: 2.5;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    /* margin: 10px; */
+    background-color: #dfdfc0;
+}
+
+/* 公告與通知h3 */
+main .header .notify{
+    position: relative;
+    top: 60px;
+}
+
+/* maim h3字樣 */
+main h3{
+    text-align: center;
+    margin: 60px 0px 0px 0px;
+    font-size: 26px;
+    color: #3C3C3C;
+}
+
+/* 公告裡的日期字樣 */
+main .notify-section article div h4{
+    display: inline;
+    /* position: absolute;
+    left: 20px;
+    top: 5px; */
+    /* border: 1px solid blue; */
+    font-size: 18px;
+    line-height: 4;
+    color: rgb(80, 81, 22);
+}
+
+/* 公告裡包住文字的外框 */
+main .notify-section .string{
+    width:250px;
+    /* border: 1px solid firebrick; */
+    text-align: center;
+    vertical-align: middle;
+    /* line-height: 2.3; */
+}
+
+/* 公告裡的文字字樣 */
+main .notify-section article a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #696666;
+    display: inline-block;
+    /* width: 600px;
+    text-align: center;
+    vertical-align: middle; */
+}
+
+/* 公告左側 */
+main .article-left{
+    position: relative;
+    /* top: 30px;
+    bottom: 30px; */
+}
+
+/* 公告右側 */
+main .article-right{
+    position: relative;
+    /* top: 30px; */
+    /* bottom: 30px; */
+}
+
+/* 公告中間 */
+main .article-center{
+    position: relative;
+    top: 80px;
+    /* bottom: 30px; */
+}
+
+/* 公告裡比較短的文字調高低位置 */
+main article .a{
+    position: relative;
+    top: 13px;
+}
+
+/* 最新商品裡包住商品照片的外框 */
+main .img{
+    /* border: 1px solid red; */
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+/* main .wrap{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+} */
+
+/* 包住整排的最新商品資訊，與下排的做margin-bottom */
+main .new-product{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid mediumpurple; */
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+
+/* 最新商品標題 */
+main .h3{
+    margin: 0px 0px 60px 0px;
+}
+
+/* 最新商品照片 */
+main .img img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+/* 最新商品名 */
+main .pic article{
+    /* border: none; */
+    padding: 15px 0px;
+    text-align: center;
+    width: 220px;
+    /* border: 1px solid forestgreen; */
+    margin: auto;
+}
+
+/* 商品價錢 */
+main section .money{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* new標籤 */
+main .new-product .new{
+    position: absolute;
+    right: -4px;
+    top: -9px;
+    font-size: 12px;
+}
+
+/* 文字顏色 */
+div{
+    color: #3C3C3C;
+}
+
+/* main裡的footer */
+main .footer{
+    display: flex;
+    justify-content: flex-end;
+    /* position: relative;
+    top: 20px; */
+    /* margin-top: 10px; */
+    /* border-bottom: 1px solid #171111; */
+}
+
+/* main .footer .more{
+    background-color: #d2cccc;
+    color: #2e2e2c;
+    width: 10%;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    padding-top: 7px;
+    border: 1px solid red;
+} */
+
+/* 查看更多按鈕外框 */
+main .footer .btn{
+    width: 10%;
+    /* border: 1px solid blue; */
+}
+
+/* 查看更多按鈕圖片 */
+main .footer .btn img{
+    width: 100%;
+}
+
+/* main .footer .btn img :hover{
+
+} */
+
+/* 交通資訊 */
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 交通資訊標題 */
+.location .location-title{
+    margin-bottom: 60px;
+    font-size: 26px;
+}
+
+.information{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.information .time, .address{
+    text-align: center;
+    padding: 20px 0px;
+    /* font-size: 26px; */
+}
+
+.information p{
+    color: #3C3C3C;
+    font-size: 14px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+/* 頁尾 */
+footer{
+    background-color: #d7d7b9;
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* border-top: 4px solid #b1b09b; */
+    box-shadow:  0px  4px 15px 4px #b1b09b inset;
+    /* box-sizing: border-box; */
+    /* border: 4px solid red; */
+}
+
+/* 頁尾資訊外框 */
+footer .wrap{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60ppx;
+    /* border: 1px solid violet; */
+}
+
+/* 頁尾資訊文字外框 */
+footer .wrap section{
+    text-align: center;
+}
+
+/* 頁尾資訊標題 */
+footer .wrap section h5{
+    padding: 30px 0px 20px 0px;
+    /* border: 1px solid rgb(30, 49, 78); */
+}
+
+/* 頁尾資訊文字 */
+footer .wrap section a{
+    font-size: 12px;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    color: #3C3C3C;
+    font-size: 12px;
+    padding: 5px;
+    display: inline-block;
+}
+
+/* 頁尾資訊連結 */
+footer .wrap section .href{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 頁尾資訊連結樣式 */
+footer .wrap section .href a{
+    text-decoration: none;
+    display: inline-block;
+    color: #3C3C3C;
+    font-size: 12px;
+    padding: 5px;
+}
+
+/* 版權資訊外框 */
+footer .copy{
+    margin: auto;
+}
+
+/* 版權資訊內文 */
+footer .copy p{
+    font-size: 10px;
+    padding: 5px;
+    color: #3C3C3C;
+    margin-top: 30px;
+}
+
+footer .wrap section article{
+    display: flex;
+    flex-direction: column;
+}

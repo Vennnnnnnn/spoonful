@@ -1,0 +1,56 @@
+.about-us-container {
+    width: 700px;
+    margin: auto;
+    padding: 90px 0 150px;
+    position: relative;
+}
+.about-us-txt {
+    width: 300px;
+    margin: auto;
+    line-height: 4.5;
+    text-align: center;
+    color: rgba(44, 40, 40, .80);
+    letter-spacing: 2px;
+}
+.divider {
+    border-right: 1px solid rgba(44, 40, 40, .80);
+    height: 130px;
+    margin-right: 50%;
+    margin-top: 9%;
+}
+.bg {
+    display: block;
+    width: 755px;
+    height: 405px;
+    position: absolute;
+    top: -10%;
+    left: -6%;
+    z-index: -5;
+}
+.bg img {
+    width: 100%;
+    opacity: .5;
+}
+.introduction-totle {
+    margin-top: 90px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: rgba(44, 40, 40, .80);
+}
+.introduction-list {
+    margin-top: 70px;
+}
+.introduction-list-card {
+    display: flex;
+    gap: 100px;
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(171, 169, 169, 0.4);
+}
+.introduction-list-card-title {
+    font-weight: bold;
+}
+.introduction-list-card-title, .introduction-list-card-txt {
+    letter-spacing: 2px;
+    color: rgba(44, 40, 40, .80)
+}
