@@ -6,6 +6,11 @@
     margin: auto;
     position: sticky;
 }
+.cart .cart-container .cart-col{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
 .cart .cart-card {
     width: 570px;
     display: flex;
@@ -91,13 +96,19 @@
 .cart .cart-card-reduce {
     text-align: end;
 }
-.cart .cart-discount-and-subtotal {
+
+.cart .cart-col .cart-discount-and-subtotal {
     width: 340px;
-    position: sticky;
+    position: relative;
     /* right: 0;
     top: 0; */
+}
+.cart .cart-col .cart-discount-and-subtotal .for-sticky{
+    position: sticky;
+    top: 20px;
     left: 100%;
-    bottom: 50%;
+    /* right: 0;
+    top: 0; */
 }
 .cart .cart-discount {
     letter-spacing: 2px;
