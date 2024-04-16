@@ -52,6 +52,7 @@
     margin-bottom: 40px;
     padding-left: 18px; 
     appearance: none;
+    color: rgba(44, 40, 40, .80);
 }
 /* .register #register-password {
     width: 371px;

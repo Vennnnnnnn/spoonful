@@ -120,6 +120,7 @@ h4 {
     margin-bottom: 40px;
     padding-left: 18px; 
     appearance: none;
+    color: rgba(44, 40, 40, .80);
 }
 /* .member-login #member-login-password {
     width: 371px;

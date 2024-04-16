@@ -97,6 +97,9 @@ label {
 .contact-us .contact-us-input .contact-us-input-content{
     margin-top: 13px;
 }
+input, textarea {
+    color: rgba(44, 40, 40, .80);
+}
 .contact-us .contact-us-input {
     display: flex;
     flex-direction: column;
