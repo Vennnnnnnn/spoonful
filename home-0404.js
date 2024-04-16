@@ -59,4 +59,12 @@
 //         element.style.transform = `translateX(${moveSite}px)`;
 //     });
 // }
+// document.addEventListener('DOMContentLoaded', function() {
+//     let links = document.querySelectorAll('a');
 
+//     links.forEach(link => {
+//         link.addEventListener('click', function(e){
+//             e.preventDefault();
+//         });
+//     });
+// });
