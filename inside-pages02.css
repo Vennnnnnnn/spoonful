@@ -121,7 +121,7 @@ input[type=number]::-webkit-outer-spin-button {
 .divider {
     width: 100%;
     border-bottom: 1px solid rgba(145, 140, 140, 0.4);
-    margin-top: 25px;
+    margin-top: 25px    ;
 }
 .narrate {
     margin-top: 25px;
@@ -137,14 +137,22 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: column;
     gap: 40px;
 }
-.describe {
+#describe {
+    /* display: none; */
+}
+/* .describe {
     color: #FCFBFA;;
     background-color: #c47575;
     padding: 10px 23px;
     border-radius: 3px;
+} */
+.describe{
+    padding-top: 22px;
+    border-top: 2px solid #c47575;
 }
 .detail:hover {
-    color: #c47575;
+    padding-top: 22px;
+    border-top: 2px solid #c47575;
 }
 .photo-album {
     margin-top: 35px;

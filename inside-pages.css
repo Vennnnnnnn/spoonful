@@ -132,14 +132,13 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 20px;
     color: rgba(44, 40, 40, .80);
 }
-.describe {
-    color: #FCFBFA;;
-    background-color: #c47575;
-    padding: 10px 23px;
-    border-radius: 3px;
+.describe{
+    padding-top: 22px;
+    border-top: 2px solid #c47575;
 }
 .detail:hover {
-    color: #c47575;
+    padding-top: 22px;
+    border-top: 2px solid #c47575;
 }
 .photo-album {
     margin-top: 35px;

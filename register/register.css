@@ -1,0 +1,102 @@
+.register {
+    padding: 110px 0 130px;
+}
+.register .register-container {
+    max-width: 1200px;
+    width: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 30px; */
+    justify-content: space-between;
+    height: 800px;
+    padding: 60px 0;
+    box-shadow: 1px 2px 10px 1px rgba(177, 170, 170, 0.2);
+    border: 3px solid rgba(204, 202, 202, 0.2);
+    border-radius: 10px;
+}
+.register .register-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.register .register-title {
+    font-size: 20px;
+    position: relative;
+}
+.register .register-title::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    bottom: -100%;
+    right: -20%;
+    border: 1px solid rgba(177, 170, 170, 0.2);
+}
+.register .register-txt{
+    font-size: 18px;
+    color: rgba(44, 40, 40, .80);
+}
+.register .register-input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.register .register-input {
+    width: 365px;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1.5px solid #cabeb1;
+    background-color: #FAF2F2;
+    margin-bottom: 40px;
+    padding-left: 18px; 
+    appearance: none;
+}
+/* .register #register-password {
+    width: 371px;
+    height: 87px;
+} */
+.register .register-input:focus {
+    outline: none;
+    border: 1.5px solid #B9AB9C;
+}
+.register .register-input::placeholder {
+    opacity: .5;
+}
+.register #register-password {
+    margin-bottom: 18px;
+}
+.register label {
+    font-size: 18px;
+    margin-left: 15px;
+}
+.register-forget-password-and-register {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.register .register-forget-password-and-register-txt {
+    font-size: 14px;
+    color: #A29797;
+    text-align: end;
+}
+.register .register-forget-password-and-register-txt:hover {
+    color: #675f5f;
+}
+.register-container .login-button {
+    font-size: 18px;
+    width: 108px;
+    height: 38px;
+    padding: 6px 8px;
+    background-color: rgba(243, 185, 185, .50);
+    color: rgba(44, 40, 40, .80);
+    border-radius: 5px;
+    border: 1px solid #997C7C;
+    cursor: pointer;
+}
+.register-container .login-button:hover {
+    background-color: #c47575;
+    color: #FAF2F2;
+    border: 1.5px solid #FAF2F2;
+}
