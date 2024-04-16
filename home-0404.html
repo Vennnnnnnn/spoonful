@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Zhi+Mang+Xing&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                 Making things<br>
                 with people in mind.
             </h4>
-            <picture class="banner-logo">
+            <picture class="banner-logo" data-aos="zoom-in-left" data-aos-duration="2000">
                 <a href="./home-0404.html"><img src="./img/一匙.png" alt=""></a>
             </picture>
             <picture class="banner-pic">
@@ -55,10 +56,10 @@
     <!-- 我們的優勢 -->
     <section class="advantage">
         <div class="advantage-container">
-            <p class="advantage-txt">
+            <p class="advantage-txt" data-aos="zoom-in" data-aos-duration="2000">
                 我們認為「善意」意味著將用戶的感受具體化。<br>該設計考慮到了紋理的高品質、它如何融入空間以及在不犧牲功能的情況下易於施工。<br>當對細節的細心關注之間取得平衡時，溫柔的事物就會誕生。<br>這就是山木屋所追求的製造。
             </p>
-            <h3 class="advantage-title">
+            <h3 class="advantage-title" data-aos="fade-down" data-aos-duration="2000">
                 我們的優勢
             </h3>
         </div>
@@ -306,9 +307,12 @@
     </footer>
 
 
-
-
     <script src="home-0404.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
