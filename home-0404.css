@@ -19,6 +19,7 @@ h4 {
 /* 頁首 */
 .header {
     padding: 35px 0 35px 120px;
+    /* background-color: #FCFBFA; */
     max-width: 1200px;
     position: sticky;
     top: 0;
