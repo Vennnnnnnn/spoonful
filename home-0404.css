@@ -21,9 +21,9 @@ h4 {
     padding: 35px 0 35px 120px;
     /* background-color: #FCFBFA; */
     max-width: 1200px;
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 10; */
 }
 .header .header-nav {
     width: 555px;
