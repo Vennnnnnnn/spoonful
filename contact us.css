@@ -1,5 +1,34 @@
 .contact-us {
-    padding: 50px 0 80px;
+    padding: 0 0 80px;
+    background: url(./pic/background/9.png);
+    background-size: cover;
+    position: relative;
+}
+.contact-us::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(252, 251, 250, 1), rgba(252, 251, 250, 0));
+    backdrop-filter: blur(10px);
+}
+.contact-us::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top, rgba(252, 251, 250, 1), rgba(252, 251, 250, 0));
+    backdrop-filter: blur(10px);
+}
+.contact-us .logo {
+    padding-bottom: 26px;
+}
+.contact-us-container {
+    background-color: #FCFBFA;
 }
 label {
     color: rgba(44, 40, 40, .80);
@@ -45,8 +74,7 @@ label {
 .contact-us .contact-us-input-content {
     width: 365px;
     height: 40px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 3px;
     border: 1.5px solid #cabeb1;
     background-color: #FAF2F2;
     margin-bottom: 40px;
@@ -76,8 +104,7 @@ label {
 .contact-us .input-name {
     width: 170px;
     height: 40px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 3px;
     border: 1.5px solid #cabeb1;
     background-color: #FAF2F2;
     margin-bottom: 40px;
@@ -106,8 +133,7 @@ input, textarea {
 }
 .contact-us .textarea {
     margin-top: 13px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 3px;
     border: 1.5px solid #cabeb1;
     background-color: #FAF2F2;
     margin-bottom: 40px;
