@@ -5,6 +5,9 @@
     'GRAD' 0,
     'opsz' 24
 }
+/* .cart-col.pointer {
+    pointer-events: none;
+} */
 .cart {
     padding: 70px 130px 40px;
 }

@@ -24,11 +24,11 @@
             <ul class="header-container">
                 <li><a href="#">
                         <i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="./log-in.html">登入</a></li>
-                <li><a href="./cart.html">購物車</a></li>
-                <li><a href="./collect.html">我的最愛</a></li>
-                <li><a href="./about-us.html">關於我們</a></li>
                 <li><a href="./products.html">商品列表</a></li>
+                <li><a href="./about-us.html">關於我們</a></li>
+                <li><a href="./collect.html">我的最愛</a></li>
+                <li><a href="./cart.html">購物車</a></li>
+                <li><a href="./log-in.html">登入</a></li>
             </ul>
         </nav>
     </header>
@@ -52,13 +52,13 @@
                 <h3 class="member-login-title">會員登入</h3>
             </div>
             <form action="">
-                <div class="member-login-input-field ember-login-account-number">
+                <div class="member-login-input-field">
                     <label for="member-login-account-number">帳號</label>
-                    <input class="member-login-input"  type="email" placeholder="電子信箱" id="member-login-account-number">
+                    <input class="member-login-input member-login-account-number"  type="email" placeholder="電子信箱" id="member-login-account-number" autocomplete="username">
                 </div>
-                <div class="member-login-input-field member-login-password" id="member-login-password">
+                <div class="member-login-input-field" id="member-login-password">
                     <label for="member-login-password">密碼</label>
-                    <input class="member-login-input" type="password" placeholder="6 到 12 位英數字" id="member-login-password" min="6" max="12">
+                    <input class="member-login-input member-login-password" type="password" placeholder="6 到 12 位英數字" id="member-login-psw" min="6" max="12" autocomplete="current-password">
                 </div>
                 <div class="member-login-forget-password-and-register">
                     <a href="#" class="member-login-forget-password-and-register-txt member-login-forget-password">
@@ -162,6 +162,7 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./log-in/log-in.js"></script>
     <script>
         AOS.init();
     </script>

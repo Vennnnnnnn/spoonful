@@ -24,11 +24,11 @@
             <ul class="header-container">
                 <li><a href="#">
                         <i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="./log-in.html">登入</a></li>
-                <li><a href="./cart.html">購物車</a></li>
-                <li><a href="./collect.html">我的最愛</a></li>
-                <li><a href="./about-us.html">關於我們</a></li>
                 <li><a href="./products.html">商品列表</a></li>
+                <li><a href="./about-us.html">關於我們</a></li>
+                <li><a href="./collect.html">我的最愛</a></li>
+                <li><a href="./cart.html">購物車</a></li>
+                <li><a href="./log-in.html">登入</a></li>
             </ul>
         </nav>
     </header>
@@ -64,7 +64,8 @@
         <div class="cart-container">
             <div class="cart-col">
                 <div>
-                    <a href="#"><section class="cart-card">
+                    <a class="pointer" href="#"><section class="cart-card">
+                        
                         <picture class="cart-card-pic">
                             <img src="./pic/叉子/拉絲金18.3/gold18.3-fotor-w143-h115.jpg" alt="">
                         </picture>
@@ -77,16 +78,16 @@
                             </p>
                         </div>
                         <div class="cart-card-quantity">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined remove">
                                 remove
                             </span>
                             <input type="number" value="1" class="cart-card-num">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined add">
                                 add
                             </span>
                         </div>
                     </section></a>
-                    <a href="#"><section class="cart-card">
+                    <a class="pointer" href="#"><section class="cart-card">
                         <picture class="cart-card-pic">
                             <img src="./pic/筷子/中式 原木覺醒 22.5cm 八角木筷│鐵刀木│單品/638225108901470000 (1)-fotor-w143-h115.jpg" alt="">
                         </picture>
@@ -99,16 +100,16 @@
                             </p>
                         </div>
                         <div class="cart-card-quantity">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined remove">
                                 remove
                             </span>
                             <input type="number" value="1" class="cart-card-num">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined add">
                                 add
                             </span>
                         </div>
                     </section></a>
-                    <a href="#"><section class="cart-card">
+                    <a class="pointer" href="#"><section class="cart-card">
                         <picture class="cart-card-pic">
                             <img src="./pic/組合/RW 伯頓 不銹鋼西式餐具禮盒組│全銀/638225117576500000-fotor-w143-h115.jpg" alt="">
                         </picture>
@@ -121,16 +122,16 @@
                             </p>
                         </div>
                         <div class="cart-card-quantity">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined remove">
                                 remove
                             </span>
                             <input type="number" value="1" class="cart-card-num">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined add">
                                 add
                             </span>
                         </div>
                     </section></a>
-                    <a href="#">
+                    <a class="pointer" href="#">
                         <section class="cart-card">
                         <picture class="cart-card-pic">
                             <img src="./pic/湯匙/葡式 設計風潮 不銹鋼攪拌匙│霧黑/638225122239300000 (1)-fotor-w143-h115.jpg" alt="">
@@ -144,11 +145,11 @@
                             </p>
                         </div>
                         <div class="cart-card-quantity">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined remove">
                                 remove
                             </span>
                             <input type="number" value="1" class="cart-card-num">
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined add">
                                 add
                             </span>
                         </div>
@@ -285,6 +286,7 @@
         </div>
     </footer>
 
+    <script src="./cart/cart.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
