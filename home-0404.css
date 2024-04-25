@@ -62,12 +62,20 @@
     }
 }
 @media screen and (max-width: 992px){
-    .banner .banner-pic {
+    /* .banner .banner-pic {
         height: 90vh;
-    }
+        width: 100%;
+    } */
 }
-@media screen and (max-width: 768px) {
-    .banner .banner-title { 
+/* @media screen and (max-width: 768px) {
+} */
+@media screen and (max-width: 375px) {
+    .banner .banner-pic {
+        width: 20%;
+        height: auto;
+    }
+    .advantage {
+        background-size: 60%;
     }
 }
 .banner .banner-pic {
@@ -92,7 +100,7 @@
     padding: 137px 0;
 }
 .advantage .advantage-container {
-    width: 870px;
+    width: 69%;
     /* margin-left: 20%; */
     margin: auto;
     display: flex;
@@ -101,18 +109,32 @@
     max-width: 1200px;
 }
 .advantage .advantage-txt {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: clamp(14px, 1.26482213vw, 16px);
     color: rgba(44, 40, 40, .80);
-    letter-spacing: 5px;
+    letter-spacing: 0.395vw;
     line-height: 2;
-    width: 650px;
+}
+@media screen and (max-width: 768px){
+    .advantage .advantage-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
 }
 .advantage .advantage-title {
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: clamp(26px, 2.3715415vw, 30px);
     writing-mode: vertical-lr;
     text-orientation: upright;
     color: rgba(44, 40, 40, .80);
     position: relative;
+}
+@media screen and (max-width: 768px) {
+    .advantage .advantage-title {
+        writing-mode: horizontal-tb;
+        margin-right: auto;
+    }
 }
 .advantage .advantage-title::before {
     content: '';
@@ -121,6 +143,21 @@
     top: -35%;
     height: 30%;
     border-left: 1px solid rgba(44, 40, 40, .80);
+}
+@media screen and (max-width: 768px) {
+    .advantage .advantage-title::before {
+        content: "";
+        display: none;
+    }
+    .advantage .advantage-title::after {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid rgba(44, 40, 40, .80);
+        width: 20%;
+        top: 45%;
+        left: -30%;
+
+    }
 }
 /* 大圖 */
 .only-pic .only-pic-container {
