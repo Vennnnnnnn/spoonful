@@ -6,7 +6,7 @@ a {
     text-decoration: none;
 }
 h3 {
-    color: rgba(44, 40, 40, .95);
+    color: rgba(44, 40, 40, .8);
     font-size: 20px;
     letter-spacing: 10px;
     text-align: center;
@@ -17,6 +17,9 @@ h4 {
     letter-spacing: 5px;
     text-align: center;}
 /* 頁首 */
+.header .fa-magnifying-glass-1 {
+    display: none;
+}
 .header {
     padding: 35px 0 35px 120px;
     /* position: sticky;
@@ -36,13 +39,48 @@ h4 {
 .header .header-container li {
     font-size: 16px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .header {
-        padding: 35px;
+        padding: 20px 35px;
+        position: relative;
     }
     .header .header-nav {
         /* display: none; */
-        
+        position: absolute;
+        left: 0;
+        z-index: 15;
+        background-color:  rgba(250, 242, 242, .9);
+        height: 80vh;
+        width: 250px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+        top: 80%;
+    }
+    .header-nav.show {
+        display: block;
+        opacity: 1;
+    }
+    .header .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        align-items: start;
+    }
+    .header .header-container li {
+        font-size: 24px;
+        position: relative;
+        padding: 15px;
+    }
+    .header .header-container li:nth-child(n+2):nth-child(-n+5)::after {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid #c6c6c6;
+        width: 250px;
+        bottom: -35%;
+        left: 0;
     }
     .header .header-hb {
         width: 40px;
@@ -57,6 +95,18 @@ h4 {
         width: 80%; 
         height: 2px;
         background-color: rgba(10, 10, 10, 0.6);
+    }
+    .header .header-icon {
+        display: none;
+    }
+    .header .fa-magnifying-glass-1 {
+        display: inline;
+        font-size: 24px;
+    }
+    .header .header-hb-icon {
+        display: flex;
+        align-items: center;
+        gap: 35px;
     }
 }
 .header .header-container li:hover a, .fa-magnifying-glass{
@@ -151,12 +201,12 @@ padding: 77px 0;
 }
 .footer .footer-information-col-title {
     font-size: 18px;
-    color: rgba(44, 40, 40, .95);
+    color: rgba(44, 40, 40, .8);
     letter-spacing: 2px;
 }
 .footer .footer-information-col-txt {
     font-size: 14px;
-    color: rgba(44, 40, 40, .95);
+    color: rgba(44, 40, 40, .8);
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -184,7 +234,7 @@ padding: 77px 0;
 }
 .footer .footer-copytight-block {
     width: 100%;
-    color: rgba(44, 40, 40, .95);
+    color: rgba(44, 40, 40, .8);
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
