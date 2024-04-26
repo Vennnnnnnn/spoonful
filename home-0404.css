@@ -61,14 +61,6 @@
         right: 35px;
     }
 }
-@media screen and (max-width: 992px){
-    /* .banner .banner-pic {
-        height: 90vh;
-        width: 100%;
-    } */
-}
-/* @media screen and (max-width: 768px) {
-} */
 @media screen and (max-width: 375px) {
     .banner .banner-pic {
         width: 20%;
@@ -98,6 +90,11 @@
     /* background-size: 677px 261px; */
     background-size: 50%;
     padding: 137px 0;
+}
+@media screen and (max-width: 768px) {
+    .advantage {
+        padding: 80px 0;
+    }
 }
 .advantage .advantage-container {
     width: 69%;
@@ -216,7 +213,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 20px;
+        gap: 40px;
     }
     .products .products-card {
         flex-basis: 100%;
@@ -291,6 +288,12 @@
     display: block;
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    .products .products-overview {
+        left: 65%;
+        /* margin-right: auto; */
+    }
+}
 .products .products-overview:hover {
     color: #948181;
 }
@@ -315,6 +318,11 @@
     position: relative;
     width: 100%;
     /* transition: 1s; */
+}
+@media screen and (max-width:768px){
+    .detail {
+        padding: 70px 0;
+    }
 }
 .detail .detail-container {
     width: 100%;
@@ -342,6 +350,8 @@
     object-fit: cover;
 }
 .detail .detail-title {
+    /* font-size: 30px; */
+    font-size: clamp(26px, 2.3715415vw, 30px);
     position: absolute;
     writing-mode: vertical-lr;
     text-orientation: upright;
@@ -377,7 +387,8 @@
 /* 注意 */
 .notice-container {
     max-width: 1200px;
-    width: 830px;
+    min-width: 310px;
+    width: 65%;
     margin: auto;
 }
 .notice .notice-title {
@@ -406,15 +417,28 @@
     align-items: flex-start;
     margin-top: 130px;
 }
+@media screen and (max-width:768px){
+    .notice .notice-list {
+        margin-top: 70px;
+    }
+}
 .notice .notice-list-card {
     display: grid;
     grid-template-columns: repeat(1,180px 1fr);
-    width: 830px;
+    /* width: 830px; */
     /* margin: 15px 0 15px; */
     padding: 35px 0;
 }
+@media screen and (max-width: 768px) {
+    .notice .notice-list-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
 .notice .notice-list-card-date {
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: clamp(13px, 1.10671937vw, 14px);
     display: grid;
     align-items: center;
     letter-spacing: 1.5px;
@@ -435,11 +459,14 @@
 }
 .traffic-information .traffic-information-container {
     max-width: 1200px;
-    width: 930px;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media screen and (max-width: 768px) {
+
 }
 .traffic-information .traffic-information-sub-title {
     font-size: 16px;
@@ -465,12 +492,27 @@
     display: block;
     border-radius: 5px;
     margin-top: 70px;
+    /* width: 100%;
+    height: 250px */
+}
+@media screen and (max-width:768px) {
+    .traffic-information .traffic-information-map {
+        width: 90%;
+        height: 250px
+    }
 }
 .traffic-information .traffic-information-contact-list {
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
     width: 100%;
+}
+@media screen and (max-width:768px) {
+    .traffic-information .traffic-information-contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 .traffic-information .traffic-information-contact-information {
     display: grid;
@@ -494,7 +536,7 @@
 }
 .footer .footer-container {
     max-width: 1200px;
-    width: 1025px;
+    width: 81%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
