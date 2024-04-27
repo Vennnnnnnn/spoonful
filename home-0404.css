@@ -37,7 +37,7 @@
 }
 .banner .banner-sub-title {
     font-size: 16px;
-    font-size: clamp(14px, 1.26482213vw, 16px);
+    font-size: clamp(12px, 1.26482213vw, 16px);
     letter-spacing: 5px;
     line-height: 1.5;
     /* height: 48px; */
@@ -56,18 +56,9 @@
 }
 @media screen and (max-width: 1200px) {
     .banner .banner-logo {
-        width: 135px;
+        width: 100px;
         top: -135px;
         right: 35px;
-    }
-}
-@media screen and (max-width: 375px) {
-    .banner .banner-pic {
-        width: 20%;
-        height: auto;
-    }
-    .advantage {
-        background-size: 60%;
     }
 }
 .banner .banner-pic {
@@ -84,6 +75,16 @@
     border-top-left-radius: 3px;
     object-fit: cover;
 }
+@media screen and (max-width: 375px) {
+    .banner .banner-pic {
+        /* width: 20%; */
+        width: 50px;
+        /* height: auto; */
+    }
+    .banner .banner-sub-title {
+        left: 100%
+    }
+}
 /* 我們的優勢 */
 .advantage {
     background: url('./pic/我們的優勢/4.png') no-repeat center;
@@ -94,6 +95,7 @@
 @media screen and (max-width: 768px) {
     .advantage {
         padding: 80px 0;
+        background-size: 60%;
     }
 }
 .advantage .advantage-container {

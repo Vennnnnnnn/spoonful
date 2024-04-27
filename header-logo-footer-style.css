@@ -49,18 +49,19 @@ h4 {
         position: absolute;
         left: 0;
         z-index: 15;
-        background-color:  rgba(252, 251, 250, .9);
+        /* background-color:  rgba(252, 251, 250, .9); */
+        background-color: rgba(242, 241, 241, 0.9);
         height: 80vh;
-        width: 250px;
+        width: 300px;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         transition: opacity .2s ease-in-out;
         opacity: 0;
-        top: 80%;
+        top: 90%;
     }
     .header-nav.show {
         display: block;
-        opacity: 1;
+        opacity: 1; 
     }
     .header .header-container {
         display: flex;
@@ -77,9 +78,9 @@ h4 {
     .header .header-container li:nth-child(n+2):nth-child(-n+5)::after {
         content: "";
         position: absolute;
-        border-bottom: 1px solid #c6c6c6;
-        width: 250px;
-        bottom: -35%;
+        border-bottom: 1px solid rgba(198, 198, 198, .9);
+        width: 300px;
+        bottom: -65%;
         left: 0;
     }
     .header .header-hb {
@@ -131,13 +132,24 @@ h4 {
 }
 .logo .logo-container {
     max-width: 1200px;
-    width: 1000px;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: flex-end;
 }
 .logo .logo-pic {
     display: inline-block;
+}
+.logo .logo-pic img {
+    width: 100%;
+}
+@media screen and (max-width: 1200px) {
+    .logo .logo-pic {
+        width: 110px;
+        position: absolute;
+        top: 35px;
+        right: 20px;
+    }
 }
 /* title */
 .title .title-container {
