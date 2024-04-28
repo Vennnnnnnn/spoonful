@@ -2,9 +2,15 @@
     padding: 70px 0 40px;
 }
 .collect .collect-container {
-    width: 1000px;
+    width: 80%;
+    max-width: 1200px;
     margin: auto;
     position: sticky;
+}
+@media screen and (max-width:768px){
+    .collect .collect-container {
+        width: 90%;
+    }
 }
 .collect .collect-card {
     /* width: 570px; */
@@ -55,8 +61,25 @@
     font-size: 18px;
 }
 .collect .collect-card-price {
+    border: 1px solid red;
     font-size: 18px;
     display: flex;
+
+}
+@media screen and (max-width:768px){
+    .collect .collect-card-txt {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1,1fr);
+        gap: 50px;
+    }
+    .collect .collect-card-title {  
+        font-size: 14px;
+        width: 80%;
+        margin-right: 0;
+    }
+    .collect .collect-card-price {
+        width: 50%;
+    }
 }
 .collect .fa-heart {
     margin-left: 84%;

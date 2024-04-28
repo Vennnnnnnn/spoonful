@@ -29,6 +29,18 @@ h4 {
 .header .header-nav {
     width: 555px;
 }
+.header .fa-cart-shopping {
+    display:  none;
+}
+@media screen and (max-width:1200px){
+    .header .fa-cart-shopping {
+        display: block;
+        font-size: 22px;
+    }
+    .header .fa-cart-shopping:hover {
+        color: #c47575;
+    }
+}
 .header .header-container {
     display: flex;
     justify-content: space-between;
@@ -150,6 +162,8 @@ h4 {
         top: 35px;
         right: 20px;
     }
+}
+    
 }
 /* title */
 .title .title-container {

@@ -56,7 +56,7 @@
 }
 @media screen and (max-width: 1200px) {
     .banner .banner-logo {
-        width: 100px;
+        width: 110px;
         top: -135px;
         right: 35px;
     }
@@ -450,6 +450,11 @@
     grid-template-rows: repeat(2,35px);
     align-items: center;
     letter-spacing: 2px;
+}
+@media screen and (max-width:768px){
+    .notice .notice-list-card-content {
+        line-height: 1.2;
+    }
 }
 .notice .notice-list-card-divider{
     border-bottom: 1px solid #EDE4E4;
