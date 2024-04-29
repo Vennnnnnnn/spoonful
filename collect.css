@@ -61,7 +61,7 @@
     font-size: 18px;
 }
 .collect .collect-card-price {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 18px;
     display: flex;
 
@@ -69,16 +69,17 @@
 @media screen and (max-width:768px){
     .collect .collect-card-txt {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1,1fr);
-        gap: 50px;
+        gap: 30px;
     }
     .collect .collect-card-title {  
         font-size: 14px;
         width: 80%;
         margin-right: 0;
+        margin-top: 5px;
     }
     .collect .collect-card-price {
         width: 50%;
+        font-size: 16px;
     }
 }
 .collect .fa-heart {
