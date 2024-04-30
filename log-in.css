@@ -1,6 +1,6 @@
 /* 會員登入 */
 .member-login {
-    padding: 0 130px 110px;
+    padding: 0 0 110px;
     background: url(./pic/background/8.png);
     background-size: cover;
     position: relative;
@@ -31,7 +31,8 @@
 
 .member-login .member-login-container {
     max-width: 1200px;
-    width: 550px;
+    width: 40%;
+    height: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -44,7 +45,19 @@
     background-color: #FCFBFA;
     /* opacity: 1; */
 }
+@media screen and (max-width:1200px){
+    .member-login .member-login-container {
+        margin: 50px auto;
+        min-width: 400px;
+    }
+}
+@media screen and (max-width:768px){
+    .member-login .member-login-container {
+        margin: 50px auto;
+        min-width:350px;
+}
 
+}
 .member-login .member-login-txt {
     display: flex;
     flex-direction: column;
@@ -87,7 +100,11 @@
     appearance: none;
     color: rgba(44, 40, 40, .80);
 }
-
+@media screen and (max-width:1200px){
+    .member-login .member-login-input {
+        width: 265px;
+    }
+}
 /* .member-login #member-login-password {
     width: 371px;
     height: 87px;

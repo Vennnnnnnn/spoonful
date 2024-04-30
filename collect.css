@@ -1,6 +1,12 @@
+@media screen and (max-width:768px) {
+    .title {
+        margin: -40px 0 0;
+    }
+}
 .collect {
     padding: 70px 0 40px;
 }
+
 .collect .collect-container {
     width: 80%;
     max-width: 1200px;
