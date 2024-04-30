@@ -3,6 +3,11 @@
 .banner {
     padding: 87px 0 0;
 }
+@media screen and (max-width:1200px){
+    .banner {
+        padding: 20px 0 0;
+    }
+}
 .banner .banner-container {
     /* width: 88%; */
     width: 100%;
@@ -59,6 +64,7 @@
         width: 110px;
         top: -135px;
         right: 35px;
+        display: none;
     }
 }
 .banner .banner-pic {

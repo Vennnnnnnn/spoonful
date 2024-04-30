@@ -29,6 +29,9 @@ h4 {
 .header .header-nav {
     width: 555px;
 }
+.header .header-logo {
+    display: none;
+}
 .header .fa-cart-shopping {
     display:  none;
 }
@@ -53,8 +56,24 @@ h4 {
 }
 @media screen and (max-width: 1200px) {
     .header {
-        padding: 20px 35px;
+        padding: 15px 35px;
         position: relative;
+        background-color: #FCFBFA;
+        position: sticky;
+        top: 0;
+        z-index: 25;
+        height: 30px;
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .header-logo {
+        display: block;
+        width: 80px;
+        /* margin-left: 130px; */
+    }
+    .header .header-logo img {
+        width: 100%;
     }
     .header .header-nav {
         /* display: none; */
@@ -70,6 +89,7 @@ h4 {
         transition: opacity .2s ease-in-out;
         opacity: 0;
         top: 90%;
+        padding: 10px 20px;
     }
     .header-nav.show {
         display: block;
@@ -86,18 +106,24 @@ h4 {
         font-size: 22px;
         position: relative;
     }
-    .header .header-container li:nth-child(n+1):nth-child(-n+5)::after {
+    /* .header .header-container li:nth-child(n+1):nth-child(-n+5)::after {
         content: "";
         position: absolute;
         border-bottom: 1px solid rgba(198, 198, 198, .9);
         width: 300px;
         bottom: -110%;
         left: 0;
-    }
-    /* .header .header-container li:nth-child(n+1):nth-child(-n+5) {
-        border-bottom: 1px solid rgba(198, 198, 198, .9);
-        padding-bottom: 15px;
     } */
+    .header .header-container li:nth-child(n+1):nth-child(-n+5) {
+        border-bottom: 1px solid rgba(198, 198, 198, .9);
+        padding-bottom: 30px;
+        width: 100%;
+        
+    }
+    .header .header-container li {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
     .header .header-hb {
         width: 40px;
         height: 40px;
@@ -164,6 +190,7 @@ h4 {
         position: absolute;
         top: 35px;
         right: 20px;
+        display: none;
     }
 }
 /* title */
