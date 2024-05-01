@@ -2,12 +2,26 @@
     padding: 90px 0;
 }
 .inside-pages-container {
-    width: 900px;
+    width: 71%;
     max-width: 1200px;
     margin: auto;
 }
+@media screen and (max-width:992px){
+    .inside-pages {
+        padding: 25px 0 50px;
+    }
+    .inside-pages-container {
+        width: 90%;
+    }
+}
+.inside-pages-pic {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
 .inside-pages-pic img {
     border-radius: 3px;
+    width: 100%;
 }
 .inside-pages-wrap {
     display: flex;
@@ -17,19 +31,35 @@
     /* justify-content: space-between; */
     gap: 55px;
 }
+@media screen and (max-width:992px) {
+    .inside-pages-wrap {
+        height: 100%;
+        gap: 15px;
+    }
+}
 .inside-pages-exhibit {
     margin-top: 15px;
     display: flex;
     gap: 15px;
 }
+.inside-pages-exhibit-pic {
+    width: 67px;
+    display: block;
+}
 .inside-pages-exhibit-pic img {
     border-radius: 3px;
+    object-fit: cover;
 }
 .inside-pages-txt {
     display: flex;
     flex-direction: column;
     gap: 50px;
     padding: 5px 0;
+}
+@media screen and (max-width:992px) {
+    .inside-pages-txt {
+        gap: 20px;
+    }
 }
 .inside-pages-title {
     font-size: 20px;
@@ -119,6 +149,16 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #b15e5e;
     border: 1px solid #b15e5e;
 }
+@media screen and (max-width:992px){
+    .add-to-the-cart {
+        padding: 8px 10px;
+        width: 50%;
+    }
+    .checkout-now {
+        padding: 8px 10px;
+        width: 50%;
+    }
+}
 .divider {
     width: 100%;
     border-bottom: 1px solid rgba(145, 140, 140, 0.4);
@@ -145,7 +185,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .photo-album-pic {
     display: block;
-    width: 840px;
+    width: 100%;
     margin: auto;
     margin-bottom: 15px;
 }
@@ -168,6 +208,17 @@ input[type=number]::-webkit-outer-spin-button {
 .recommend-products {
     display: flex;
     justify-content: space-between;
+}
+@media screen and (max-width:992px){
+    .recommend {
+        padding: 20px 0 0;
+    }
+    .recommend-products {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 15px;
+    }
 }
 /* .products:hover {
     box-shadow: 1px 2px 15px 1px #cacaca;

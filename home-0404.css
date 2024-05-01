@@ -5,7 +5,8 @@
 }
 @media screen and (max-width:1200px){
     .banner {
-        padding: 20px 0 0;
+        padding: 50px 0 0;
+        /* margin: 0 0 50px; */
     }
 }
 .banner .banner-container {
@@ -66,11 +67,13 @@
         right: 35px;
         display: none;
     }
+    .banner .banner-title {
+        top: 100px;
+    }
 }
 .banner .banner-pic {
     width: 75%;
     height: 384px;
-    /* height: 90vh; */
     display: block;
     margin-left: auto;
     margin-top: 71px;
@@ -81,11 +84,14 @@
     border-top-left-radius: 3px;
     object-fit: cover;
 }
+@media screen and (max-width: 1200px) {
+    .banner .banner-pic {
+        height: 450px;
+    }
+}
 @media screen and (max-width: 375px) {
     .banner .banner-pic {
-        /* width: 20%; */
-        width: 50px;
-        /* height: auto; */
+        height: 684px;
     }
     .banner .banner-sub-title {
         left: 100%

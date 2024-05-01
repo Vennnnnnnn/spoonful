@@ -56,7 +56,6 @@
         margin: 50px auto;
         min-width:350px;
 }
-
 }
 .member-login .member-login-txt {
     display: flex;
@@ -95,10 +94,12 @@
     border-radius: 3px;
     border: 1.5px solid #cabeb1;
     background-color: #FAF2F2;
-    margin-bottom: 40px;
     padding-left: 18px;
     appearance: none;
     color: rgba(44, 40, 40, .80);
+}
+.member-login-input-field:not(:last-child) {
+    margin-bottom: 40px;
 }
 @media screen and (max-width:1200px){
     .member-login .member-login-input {

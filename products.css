@@ -20,17 +20,42 @@
     font-size: 20px;
     margin-top: 10px;
 }
+.search {
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .title .title-container {
         max-width: 1200px;
         width: 20%;
         margin: auto;
+        position: relative;
+    }
+    .search {
+        display: block;
     }
     .search .search-container {
+        margin: auto;
         width: 80%;
     }
     .search input {
         height: 40px;
+        padding-left: 35px;
+        border-radius: 3px;
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+        border: 1px solid #ccc;
+    }
+    .search input :focus {
+        border: 1px solid #888;
+        outline: none;
+    }
+    .magnifier {
+        position: absolute;
+        z-index: 5;
+        left: 50px;
+        top: 97px;
+        color: #29231c;
     }
 }
 /* 大圖 */
@@ -89,9 +114,9 @@ padding: 77px 0;
 }
 .icon .icon-choose {
     width: 120px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    /* appearance: none; */
+    /* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
     background-color: #FAF2F2;
     color: rgba(44, 40, 40, .80);
     border: 1px solid #B9AB9C;
