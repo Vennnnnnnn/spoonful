@@ -36,14 +36,24 @@
 //     });
 // });
 
-$(function() {
-    $(".header-hb").click(function() {
-        $(".header-nav").slideToggle("slow", function() {
-            if ($(this).is(":visible")) {
-                $(this).css("left", "0");
-            } else {
-                $(this).css("left", "-100%");
-            }
-        });
-    });
-});
+
+let hamburger = document.querySelector('.header-hb');
+hamburger.addEventListener('click', function(){
+    let headerNav = document.querySelector('.header-nav');
+    let currentLeft = parseInt(headerNav.style.left);
+    headerNav.style.transition = '1s';
+    headerNav.style.left = (currentLeft === 0) ? '-555px' : '0';
+})
+
+
+// $(function() {
+//     $(".header-hb").click(function() {
+//         $(".header-nav").slideToggle("slow", function() {
+//             if ($(this).is(":visible")) {
+//                 $(this).css("left", "0");
+//             } else {
+//                 $(this).css("left", "-100%");
+//             }
+//         });
+//     });
+// });

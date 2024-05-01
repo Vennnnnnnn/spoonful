@@ -5,6 +5,11 @@ let remove = document.querySelectorAll(".remove");
 let num    = document.querySelectorAll(".cart-card-num");
 let price  = document.querySelectorAll(".cart-card-price");
 
+let total = 3102;
+let showTotal = document.querySelector('.cart-amount');
+let showTotalAndDiscount = document.querySelector('.cart-subtotal-price');
+let cartCheckoutPrice = document.querySelector('.cart-checkout-price');
+
 let addAndRemove = [add, remove];
 
 for (let i = 0; i < addAndRemove.length; i++) {
@@ -12,8 +17,15 @@ for (let i = 0; i < addAndRemove.length; i++) {
         if (i === 0) {
             add[j].addEventListener("click", function() {
                 num[j].value = parseInt(num[j].value) + 1;
-        
-                price[j].innerHTML = `$ ${(parseInt(price[j].innerHTML.trim().split(" ")[1]) / (num[j].value - 1)) * num[j].value}`;
+                
+                let addPrice = (parseInt(price[j].innerHTML.trim().split(" ")[1]) / (num[j].value - 1)) * num[j].value;
+
+                total += parseInt(price[j].innerHTML.trim().split(" ")[1]) / (num[j].value - 1);
+
+                showTotal.innerHTML = cartCheckoutPrice.innerHTML = showTotalAndDiscount.innerHTML = `$ ${total}`;
+                // showTotalAndDiscount.innerHTML = `$ ${total}`;
+
+                price[j].innerHTML = `$ ${addPrice}`;
             });
         } else {
             remove[j].addEventListener("click", function() {
@@ -23,8 +35,13 @@ for (let i = 0; i < addAndRemove.length; i++) {
                 num[j].value = parseInt(num[j].value) - 1;
                 
                 let singleItemPrice = (parseInt(price[j].innerHTML.trim().split(" ")[1]) / (parseInt(num[j].value) + 1));
-        
-                price[j].innerHTML = `$ ${singleItemPrice * num[j].value}`;
+                
+                let subPrice = singleItemPrice * num[j].value;
+
+                total -= singleItemPrice;
+                showTotal.innerHTML = cartCheckoutPrice.innerHTML = showTotalAndDiscount.innerHTML = `$ ${total}`;
+
+                price[j].innerHTML = `$ ${subPrice}`;
             });
         }
     }
