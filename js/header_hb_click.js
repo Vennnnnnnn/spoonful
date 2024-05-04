@@ -57,3 +57,28 @@ hamburger.addEventListener('click', function(){
 //         });
 //     });
 // });
+
+$(function() {
+    $(".fa-magnifying-glass").mouseover(function() {
+        $(".header-nav").stop().animate({
+            width: "650px",
+        }, 1500);
+        $(".header-search").animate({
+            width: "200px",
+        }, 1500, function() {
+            $(this).css("border", "1px solid #ccc");
+        });
+    })
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('.header-icon-search').length) {
+            $(".header-search").stop().animate({
+                width: "0",
+            }, 1500, function() {
+                $(this).css("border", "none")
+            });
+            $(".header-nav").stop().animate({
+                width: "555px",
+            }, 1500);
+        }
+    });
+});

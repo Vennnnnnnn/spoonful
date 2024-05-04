@@ -28,6 +28,36 @@ h4 {
 }
 .header .header-nav {
     width: 555px;
+    /* width: 655px; */
+}
+.header-icon-seader {
+    position: relative;
+}
+.header .header-search {
+    height: 30px;
+    border-radius: 8px;
+    padding-left: 40px;
+    width: 0;
+    background-color: #f7f6f6;
+    border: 1px solid #ccc;
+    border: none;
+    outline: none; 
+    background-color: transparent;
+    margin: 0;
+}
+.header .header-search:focus {
+    border: 1px solid #bfbdbd;
+    outline: none;
+}
+@keyframes search {
+    0% {width: 0;}
+    100% {width: 200px;}
+}
+.header .fa-magnifying-glass {
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    color: #ccc;
 }
 .header .header-logo {
     display: none;
@@ -58,7 +88,7 @@ h4 {
     .header {
         padding: 15px 35px;
         position: relative;
-        background-color: #FCFBFA;
+        background-color: rgb(252, 251, 250);
         position: sticky;
         top: 0;
         z-index: 25;
@@ -172,7 +202,7 @@ h4 {
 }
 .header-container li .fa-magnifying-glass {
     font-size: 20px;
-    color: rgba(10, 10, 10, 0.8);
+    color: rgba(10, 10, 10, 0.5);
 }
 /* logo */
 .logo {

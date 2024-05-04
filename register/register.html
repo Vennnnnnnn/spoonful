@@ -14,6 +14,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/b0b86c15d6.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../js/jquery-3.7.1.js"></script>
     
 </head>
 <body>
@@ -33,10 +34,9 @@
         </div>
         <nav class="header-nav">
             <ul class="header-container">
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
+                <li class="header-icon-seader">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="搜尋" class="header-search">
                 </li>
                 <li><a href="./products.html">商品列表</a></li>
                 <li><a href="./about-us.html">關於我們</a></li>
@@ -48,7 +48,7 @@
         </nav>
         <picture class="header-logo">
             <a href="./home-0404.html">
-                <img src="./img/一匙.png" alt="">
+                <img src="../img/一匙.png" alt="">
             </a>
         </picture>
     </header>
@@ -183,7 +183,7 @@
         </div>
     </footer>
     
-    <script src="./js/header_hb_click.js"></script>
+    <script src="../js/header_hb_click.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -12,10 +12,12 @@ let cartCheckoutPrice = document.querySelector('.cart-checkout-price');
 
 let addAndRemove = [add, remove];
 
+
 for (let i = 0; i < addAndRemove.length; i++) {
     for (let j = 0; j < addAndRemove[i].length; j++) {
         if (i === 0) {
-            add[j].addEventListener("click", function() {
+            add[j].addEventListener("click", function(e) {
+                e.preventDefault();
                 num[j].value = parseInt(num[j].value) + 1;
                 
                 let addPrice = (parseInt(price[j].innerHTML.trim().split(" ")[1]) / (num[j].value - 1)) * num[j].value;
@@ -28,7 +30,8 @@ for (let i = 0; i < addAndRemove.length; i++) {
                 price[j].innerHTML = `$ ${addPrice}`;
             });
         } else {
-            remove[j].addEventListener("click", function() {
+            remove[j].addEventListener("click", function(e) {
+                e.preventDefault();
                 if (parseInt(num[j].value) <= 1) {
                     return;
                 }
@@ -46,6 +49,19 @@ for (let i = 0; i < addAndRemove.length; i++) {
         }
     }
 }
+
+let removeBtns = document.querySelectorAll(".remove-btn");
+let cards = document.querySelectorAll(".pointer");
+
+
+for(let i = 0; i <= removeBtns.length; i++) {
+    removeBtns[i].addEventListener("click", function(e) {
+        e.preventDefault();
+        cards[i].remove(); 
+        showTotal.innerHTML = cartCheckoutPrice.innerHTML = showTotalAndDiscount.innerHTML = `$ ${total -= parseInt(price[i].innerHTML.trim().split(" ")[1])}`;
+    });
+}
+
 
 document.addEventListener("DOMContentLoaded", function() {
     // 获取所有的 <a> 标签

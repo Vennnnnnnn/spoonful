@@ -150,19 +150,24 @@ padding: 77px 0;
     padding: 20px 0 50px;
 }
 .products .products-container {
-    max-width: 1200px;
-    width: 85%;
+    max-width: 1280px;
+    width: 80%;
     margin: auto;
+}
+.products .products-list-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 @media screen and (max-width:768px){
     .products .products-container {
         width: 90%;
     }
 }
-.products .products-list-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+@media screen and (max-width:768px) {
+    .products .products-container {
+        max-width: 370px;
+    }
 }
 .products .products-card {
     border-radius: 5px;

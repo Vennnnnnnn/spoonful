@@ -17,6 +17,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="./js/jquery-3.7.1.js"></script>
     <script src="./js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -35,10 +39,9 @@
         </div>
         <nav class="header-nav">
             <ul class="header-container">
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
+                <li class="header-icon-seader">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="搜尋" class="header-search">
                 </li>
                 <li><a href="./products.html">商品列表</a></li>
                 <li><a href="./about-us.html">關於我們</a></li>
@@ -102,7 +105,7 @@
             <h3 class="products-title">產品</h3>
             <div class="products-list">
 
-                <a href="./inside-pages.html">
+                <a href="./inside-pages.html" class="product-card">
                     <section class="products-card">
                         <picture class="products-card-pic">
                             <img src="./pic/牛排刀/歐式 弧曲稜鐵 22.5cm 主餐刀｜黑銀｜單品/1.jpg" alt="">
@@ -114,7 +117,7 @@
                     </section>
                 </a>
 
-                <a href="#">
+                <a href="#" class="product-card">
                     <section class="products-card">
                         <picture class="products-card-pic">
                             <img src="./pic/湯匙/清新南洋 29cm 手工竹杓組｜象牙白/1.jpg" alt="">
@@ -125,7 +128,7 @@
                         </div>
                     </section>
                 </a>
-                <a href="#">
+                <a href="#" class="product-card">
                     <section class="products-card">
                         <picture class="products-card-pic">
                             <img src="./pic/組合/RW 伯頓 不銹鋼西式餐具禮盒組│全銀/638225117576500000-fotor-w300-h245.jpg" alt="">
@@ -146,9 +149,33 @@
     </section>
 
     <!-- 注重細節 -->
-    <section class="detail">
-        <div class="detail-container">
+    <section class="detail slider">
+        <div class="detail-container slide-track">
+            <div class="detail-pic slide">
+                <img src="./pic/注重細節/12-w367-h462.jpg" alt="">
+            </div>
             <div class="detail-pic">
+                <img src="./pic/注重細節/13-w367-h462.jpg" alt="">
+            </div>
+            <div class="detail-pic">
+                <img src="./pic/注重細節/7 (2)-w367-h462.jpg" alt="">
+            </div>
+            <div class="detail-pic">
+                <img src="./pic/注重細節/4-fotor-w367-h462.jpg" alt="">
+            </div>
+            <div class="detail-pic slide">
+                <img src="./pic/注重細節/12-w367-h462.jpg" alt="">
+            </div>
+            <div class="detail-pic">
+                <img src="./pic/注重細節/13-w367-h462.jpg" alt="">
+            </div>
+            <div class="detail-pic">
+                <img src="./pic/注重細節/7 (2)-w367-h462.jpg" alt="">
+            </div>
+            <div class="detail-pic">
+                <img src="./pic/注重細節/4-fotor-w367-h462.jpg" alt="">
+            </div>
+            <div class="detail-pic slide">
                 <img src="./pic/注重細節/12-w367-h462.jpg" alt="">
             </div>
             <div class="detail-pic">
@@ -340,7 +367,7 @@
 
 
     <script src="./js/header_hb_click.js"></script>
-    <!-- <script src="home-0404.js"></script> -->
+    <script src="home-0404.js"></script>
     <!-- <script src="./js/header_hb_click.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
