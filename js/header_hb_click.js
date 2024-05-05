@@ -76,7 +76,7 @@ $(function() {
             }, 1500, function() {
                 $(this).css("border", "none")
             });
-            var navWidth = $(window).width() < 414 ? "300px" : "555px";
+            var navWidth = $(window).width() < 1200 ? "300px" : "555px";
             $(".header-nav").stop().animate({
                 width: navWidth,
             }, 1500);

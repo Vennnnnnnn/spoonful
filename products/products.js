@@ -58,3 +58,36 @@ search.addEventListener('input', function(){
         }
     } 
 });
+
+let search_1 = document.querySelector('.search');
+let count_1 = 0;
+
+search_1.addEventListener('input', function(){
+    let products = document.querySelectorAll('.products-card');
+    let inputValue = search.value;
+
+    if (inputValue == '') {
+        count_1 = 0; 
+        document.querySelector('.products-list-row').style.justifyContent = 'space-between';
+        for (let i = 0; i < products.length; i++) {
+            products[i].style.display = 'block';
+        }
+    } else {
+        for (let i = 0; i < products.length; i++) {
+            if (inputValue === products[i].getAttribute('data-item')) {
+                products[i].style.display = 'block';
+                count_1++;
+            } else {
+                products[i].style.display = 'none';
+            }
+        }
+    }
+
+    if (count == 2) {
+        document.querySelector('.products-list-row').style.justifyContent = 'flex-start';
+
+        for (let i = 0; i < products.length; i++) {
+            products[i].style.margin = '0 27px 70px 27px';
+        }
+    } 
+});
