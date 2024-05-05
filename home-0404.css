@@ -478,7 +478,7 @@
 }
 .traffic-information .traffic-information-container {
     max-width: 1200px;
-    width: 90%;
+    width: 75%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -487,6 +487,9 @@
 @media screen and (max-width: 768px) {
     .traffic-information {
         padding: 70px 0;
+    }
+    .traffic-information .traffic-information-container {
+        width: 90%;
     }
 }
 .traffic-information .traffic-information-sub-title {
@@ -528,7 +531,7 @@
     margin-top: 60px;
     width: 100%;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
     .traffic-information .traffic-information-contact-list {
         display: flex;
         flex-direction: column;
@@ -537,9 +540,10 @@
 }
 .traffic-information .traffic-information-contact-information {
     display: grid;
-    grid-template-columns: repeat(1,60px 90%);
+    grid-template-columns: repeat(1,60px 300px);
     grid-template-rows: repeat(1, 45px);
     align-items: center;
+    justify-content: center;
     color: rgba(44, 40, 40, .80);
 }
 .traffic-information .traffic-information-icon {
