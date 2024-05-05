@@ -76,9 +76,11 @@ $(function() {
             }, 1500, function() {
                 $(this).css("border", "none")
             });
+            var navWidth = $(window).width() < 414 ? "300px" : "555px";
             $(".header-nav").stop().animate({
-                width: "555px",
+                width: navWidth,
             }, 1500);
         }
     });
 });
+

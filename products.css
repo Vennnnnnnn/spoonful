@@ -1,4 +1,4 @@
-.material-symbols-outlined {
+collect-card.material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -158,6 +158,7 @@ padding: 77px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* gap: 55.3px; */
 }
 @media screen and (max-width:768px){
     .products .products-container {
@@ -177,6 +178,8 @@ padding: 77px 0;
     /* padding-bottom: 10px; */
     outline: 1px solid #e1dfdf;
     margin-bottom: 70px;
+    /* flex-shrink: 1; */
+    /* flex-basis: 300px; */
 }
 @media screen and (max-width:768px){
     .products .products-card {

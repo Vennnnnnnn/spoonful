@@ -109,13 +109,13 @@ h4 {
         /* display: none; */
         position: absolute;
         /* left: 0;     */
+        width: 300px;
         left: -555px;
         top: 90%;
         /* top: -90vh; */
         z-index: 15;
         background-color: rgba(242, 241, 241, 0.9);
         height: 80vh;
-        width: 300px;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         transition: opacity .2s ease-in-out;
