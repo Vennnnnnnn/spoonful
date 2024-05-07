@@ -17,7 +17,7 @@
 let detail = document.querySelector('.detail');
 
 detail.addEventListener('click', function () {
-    alert(123)
+    // alert(123)
 });
 
 let pictures = ['./pic/注重細節/12-w367-h462.jpg',
