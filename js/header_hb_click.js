@@ -80,7 +80,7 @@ $(function () {
         let window_height = $(window).height() // 665
         let document_height = $(document).height() // 2016
 
-        if (scroll_top > document_height - window_height - 600) {
+        if (scroll_top > document_height - window_height - 400) {
             $('#top').css({
                 opacity: 1,
                 transition: '1s',

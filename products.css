@@ -57,8 +57,8 @@ collect-card.material-symbols-outlined {
     .magnifier {
         position: absolute;
         z-index: 5;
-        left: 15px;
-        top: 10px;
+        left: 12px;
+        top: 12px;
         color: #29231c;
     }
 }
