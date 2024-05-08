@@ -1,49 +1,30 @@
-// $(function() {
-//     $(".header-icon").click(function() {
-//         $(this).slideToggle(1500, 'easeOutBack');
-//     })
+// let hamburger = document.querySelector('.header-hb');
+// hamburger.addEventListener('click', function(){
+//     let headerNav = document.querySelector('.header-nav');
+//     let currentLeft = parseInt(headerNav.style.left);
+//     headerNav.style.transition = '1s';
+//     headerNav.style.left = (currentLeft === 0) ? '-555px' : '0';
 // })
 
-// function toggleMenu() {
-//     let nav = document.querySelector('.header-nav');
-//     nav.classList.toggle('show');
-// }
-
-// let hbMenu = document.querySelector('.header-hb');
-// hbMenu.addEventListener('click', toggleMenu);
-
-// $(function() {
-//     $(".header-hb").click(function() {
-//         $(".header-nav").stop(true).animate({
-//             left: "0",
-//         }, 1500, "easeInCubic");
-//     }, function() {
-//         $(".header-nav").stop(true).animate({
-//             left: "-555px",
-//         }, 1500, "easeOutBounce");
-//     });
-// });
-
-// $(function() {
-//     $(".header-hb").click(function() {
-//         $(".header-nav").stop(true).animate({
-//             left: "0",
-//         }, "easeOutBack");
-//     },function() {
-//         $(".header-nav").stop(true).animate({
-//             left: "-555px",
-//         }, "easeOutBack");
-//     });
-// });
-
-
+// 選單
 let hamburger = document.querySelector('.header-hb');
+let headerNav = document.querySelector('.header-nav');
+
 hamburger.addEventListener('click', function(){
-    let headerNav = document.querySelector('.header-nav');
     let currentLeft = parseInt(headerNav.style.left);
-    headerNav.style.transition = '1s';
+    headerNav.style.transition = '1.5s';
     headerNav.style.left = (currentLeft === 0) ? '-555px' : '0';
-})
+});
+
+// 監聽整個文檔的點擊事件
+document.addEventListener('click', function(event) {
+    // 檢查被點擊的元素是否位於選單內部
+    if (!headerNav.contains(event.target) && event.target !== hamburger) {
+        // 如果不在選單內部且不是選單按鈕，則關閉選單
+        headerNav.style.transition = '1.5s';
+        headerNav.style.left = '-555px';
+    }
+});
 
 
 // $(function() {

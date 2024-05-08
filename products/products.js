@@ -112,25 +112,35 @@ search_1.addEventListener('input', function(){
 // window.addEventListener("load", changeCol);
 
 $(function() {
-    let col = document.querySelector(".col");
-    let row = document.querySelector(".row");
-
-
     $(".col").click(function() {
         $(".products-list-row").addClass("products-list-col");
         $(".products-card").addClass("products-card-col");
         $(".products-list-pic").addClass("products-list-pic-col");
         $(".products-card-txt").addClass("products-card-txt-col");
         $(".products-card-icon").addClass("products-card-icon-col");
-    })
+        $(".products-list-pic img").addClass("img-col");
+
+        $(".products-list-row").removeClass("products-list-row");
+        $(".products-card").removeClass("products-card");
+        $(".products-list-pic").removeClass("products-list-pic");
+        $(".products-card-txt").removeClass("products-card-txt");
+        $(".products-card-icon").removeClass("products-card-icon");
+        $(".products-list-pic img").removeClass("img");
+    });
 
     $(".row").click(function() {
-        $(".products-list-row").removeClass("products-list-col");
-        $(".products-card").removeClass("products-card-col");
-        $(".products-list-pic").removeClass("products-list-pic-col");
-        $(".products-card-txt").removeClass("products-card-txt-col");
-        $(".products-card-icon").removeClass("products-card-icon-col");
-    })
+        $(".products-list-col").addClass("products-list-row");
+        $(".products-card-col").addClass("products-card");
+        $(".products-list-pic-col").addClass("products-list-pic");
+        $(".products-card-txt-col").addClass("products-card-txt");
+        $(".products-card-icon-col").addClass("products-card-icon");
+        $(".img-col").addClass("img");
 
-    // $
-})
+        $(".products-list-col").removeClass("products-list-col");
+        $(".products-card-col").removeClass("products-card-col");
+        $(".products-list-pic-col").removeClass("products-list-pic-col");
+        $(".products-card-txt-col").removeClass("products-card-txt-col");
+        $(".products-card-icon-col").removeClass("products-card-icon-col");
+        $(".img-col").removeClass("img-col");
+    });
+});
