@@ -39,6 +39,7 @@ collect-card.material-symbols-outlined {
     }
     .search input {
         height: 40px;
+        /* width: 100%; */
         padding-left: 35px;
         border-radius: 3px;
         -webkit-appearance: textfield;
@@ -53,7 +54,7 @@ collect-card.material-symbols-outlined {
     .magnifier {
         position: absolute;
         z-index: 5;
-        left: 50px;
+        left: 60px;
         top: 97px;
         color: #29231c;
     }
@@ -163,7 +164,11 @@ padding: 77px 0;
     justify-content: space-between;
     /* width: 90%; */
 }
-
+@media screen and (max-width:375px) {
+    .products .products-list-row {
+        justify-content: center;
+    }
+}
 /* 切換 */
 .products .products-list-col {
     display: flex;
@@ -209,9 +214,16 @@ padding: 77px 0;
 }
 @media screen and (max-width:992px){
     .products .products-card {
+        width: 300px;
+        margin-bottom: 40px;
+        /* height: 260px; */
+    }
+}
+@media screen and (max-width:768px){
+    .products .products-card {
         width: 165px;
         margin-bottom: 40px;
-        height: 260px;
+        /* height: 280px; */
     }
 }
 @media screen and (max-width:768px) {
@@ -222,6 +234,10 @@ padding: 77px 0;
     }
 }
 .products .products-card:hover {
+    box-shadow: 1px 2px 15px 1px #cacaca;
+    transition: .4s;
+}
+.products .products-card-col:hover {
     box-shadow: 1px 2px 15px 1px #cacaca;
     transition: .4s;
 }
@@ -241,12 +257,18 @@ padding: 77px 0;
 }
 @media screen and (max-width:992px){
     .products .products-list-pic {
+        width: 300px;
+    }
+}
+@media screen and (max-width:768px){
+    .products .products-list-pic {
         width: 165px;
     }
 }
 @media screen and (max-width:768px) {
     .products .products-list-pic-col {
         width: 120px;
+        height: 100%;
     }
 }
 .products .products-list-pic img {
@@ -297,8 +319,9 @@ img {
 }
 @media screen and (max-width:768px){
     .products .products-card-txt {
-        padding: 5px 5px;
-        /* gap: 20px; */
+        padding: 5px 10px;
+        /* gap: 15px; */
+        height: 120px;
     }
 }
 .products .products-card-title {
