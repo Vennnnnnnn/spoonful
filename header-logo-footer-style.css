@@ -112,7 +112,7 @@ h4 {
         position: absolute;
         /* width: 300px; */
         width: 90%;
-        left: -555px;
+        left: -100%;
         top: 90%;
         z-index: 15;
         background-color: rgba(242, 241, 241, 0.9);

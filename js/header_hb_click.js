@@ -26,20 +26,8 @@ document.addEventListener('click', function(event) {
     }
 });
 
-
-// $(function() {
-//     $(".header-hb").click(function() {
-//         $(".header-nav").slideToggle("slow", function() {
-//             if ($(this).is(":visible")) {
-//                 $(this).css("left", "0");
-//             } else {
-//                 $(this).css("left", "-100%");
-//             }
-//         });
-//     });
-// });
-
 $(function() {
+    // 點擊搜尋按鈕時的事件，保持不變
     $(".fa-magnifying-glass").click(function() {
         $(".header-nav").stop().animate({
             width: "650px",
@@ -50,12 +38,11 @@ $(function() {
             $(this).css("border", "1px solid #ccc");
         });
         $(".header-search").focus()
-    })
-    $('.banner').on('click', function(event) 
-    
+    });
 
-    {
-        
+    // 點擊 banner 時的事件，新增導覽列的設定
+    $('.banner').on('click', function(event) {
+        // 檢查點擊的目標是否不是 .header-icon-search
         if (!$(event.target).closest('.header-icon-search').length) {
             $(".header-search").stop().animate({
                 width: "0",
@@ -69,6 +56,37 @@ $(function() {
         }
     });
 });
+
+// $(function() {
+//     $(".fa-magnifying-glass").click(function() {
+//         $(".header-nav").stop().animate({
+//             width: "650px",
+//         }, 1500);
+//         $(".header-search").animate({
+//             width: "200px",
+//         }, 1500, function() {
+//             $(this).css("border", "1px solid #ccc");
+//         });
+//         $(".header-search").focus()
+//     })
+//     $('.banner').on('click', function(event) 
+    
+
+//     {
+        
+//         if (!$(event.target).closest('.header-icon-search').length) {
+//             $(".header-search").stop().animate({
+//                 width: "0",
+//             }, 1500, function() {
+//                 $(this).css("border", "none")
+//             });
+//             var navWidth = $(window).width() < 1200 ? "300px" : "555px";
+//             $(".header-nav").stop().animate({
+//                 width: navWidth,
+//             }, 1500);
+//         }
+//     });
+// });
 
 function doFirst() {
     document.getElementById("top").addEventListener("click", toTop, false)
